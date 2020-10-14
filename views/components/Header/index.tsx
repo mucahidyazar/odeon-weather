@@ -13,6 +13,7 @@ const Header: React.FC<HeaderInterface> = ({ dispatch }) => {
   const getWeatherHandler = () => {
     if (city !== '') {
       dispatch(getWeather(city))
+      setCity('')
     }
   }
 

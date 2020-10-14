@@ -7,7 +7,7 @@ export const getWeather = (cityName?: string) => {
 
     if (cityName) {
       const { data } = await Axios.get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&mode=json&units=metric&appid=${process.env.NEXT_PUBLIC_OWM_API_ID}`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&mode=json&units=metric&appid=${process.env.NEXT_PUBLIC_OWM_API_ID}`
       )
       weatherDatas.push(data)
     }
