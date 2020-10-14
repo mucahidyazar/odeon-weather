@@ -32,6 +32,7 @@ const Header: React.FC<HeaderInterface> = ({ dispatch }) => {
           />
         </div>
       </div>
+
       <div className="col-md-4">
         <button
           className={`btn btn-primary ${styles.button}`}
